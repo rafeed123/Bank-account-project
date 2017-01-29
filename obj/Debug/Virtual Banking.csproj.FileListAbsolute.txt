@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\bin\Debug\Virtual Banking.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\bin\Debug\Virtual Banking.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\bin\Debug\Virtual Banking.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\obj\Debug\Virtual Banking.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\obj\Debug\Virtual Banking.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\Virtual Banking\Virtual Banking\obj\Debug\Virtual Banking.pdb
