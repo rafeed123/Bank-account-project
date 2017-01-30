@@ -14,6 +14,25 @@ namespace Virtual_Banking
         private int accountNumber = 32345;
         private float balance = 1000.00f;
 
+        //Reserve Properties
+        public int AccountNumber
+        {
+            get { return this.accountNumber; }
+            set { this.accountNumber = value; }
+        }
+        public float Balance
+        {
+            get { return this.balance; }
+            set { this.balance = value; }
+        }
+
+        //Reserve Constructor
+
+            public Reserve()
+        {
+
+        }
+
         //Reserve Methods
         public override void PrintBalance()
         {
@@ -43,6 +62,8 @@ namespace Virtual_Banking
             Console.WriteLine(accountType);
             Console.WriteLine("Your reserve account number is " + accountNumber);
             Console.WriteLine("Your reserve account balance is $" + balance);
+            Console.WriteLine(DateTime.Now);
+
         }
 
 

@@ -14,6 +14,25 @@ namespace Virtual_Banking
         private int accountNumber = 22345;
         private float balance = 10000.00f;
 
+        //Savings Properties
+        public int AccountNumber
+        {
+            get { return this.accountNumber; }
+            set { this.accountNumber = value; }
+        }
+        public float Balance
+        {
+            get { return this.balance; }
+            set { this.balance = value; }
+        }
+
+        //Savings constructor
+
+            public Savings()
+        {
+
+        }
+
         //Savings Methods
         public override void PrintBalance()
         {
@@ -41,6 +60,8 @@ namespace Virtual_Banking
             Console.WriteLine(accountType);
             Console.WriteLine("Your savings account number is " + accountNumber);
             Console.WriteLine("Your savings account balance is " + balance);
+            Console.WriteLine(DateTime.Now);
+
         }
     }//End of Savings Class
 }

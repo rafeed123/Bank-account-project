@@ -19,24 +19,24 @@ namespace Virtual_Banking
 
            
 
-            //While loop to run program
+            //While loop to run program without stoping
+
             int i = 1;
             while(i==1)
             {
-
             
             
             Console.WriteLine("Enter an account you would like to access /Checking/Savings/Reserve/ ");
             string userInput = Console.ReadLine();
             userInput.ToLower();
-            if (userInput.ToLower() == "checking")
+            if (userInput.ToLower() == "checking")// If else statment to choose what account to access
             {
                 asterickFree.DisplayAccountDetails();
                 Console.WriteLine();
                 Console.WriteLine("Enter withdrawl to WITHDRAWL enter deposit to DEPOSIT enter exit to EXIT");
                 string transaction = Console.ReadLine();
                 transaction.ToLower();
-                if (transaction.ToLower() == "deposit")
+                if (transaction.ToLower() == "deposit")//nested if else statment to choose transaction type
                 {
                     asterickFree.Credit(.00f);
                     asterickFree.DisplayAccountDetails();

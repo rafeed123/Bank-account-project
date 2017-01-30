@@ -11,6 +11,7 @@ namespace Virtual_Banking
         //Feilds
         private string firstName;
         private string lastName;
+        private string email;
         private string accountType;
 
         private int accountNumber;
@@ -26,11 +27,24 @@ namespace Virtual_Banking
 
         }
 
+        public string FirstName
+        {
+            get { return this.firstName; }
+            set { this.firstName = value; }
+        }
+
+        public string LastName
+        {
+            get { return this.lastName; }
+            set { this.lastName = value; }
+        }
+
         //Constructors
 
         public Account()
         {
-
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
 
 
