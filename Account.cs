@@ -9,6 +9,8 @@ namespace Virtual_Banking
     class Account
     {
         //Feilds
+        private string firstName;
+        private string lastName;
         private string accountType;
 
         private int accountNumber;
@@ -34,6 +36,21 @@ namespace Virtual_Banking
 
 
         //Methods
+        public virtual void Intro()
+        {
+            Console.WriteLine("Welcome to Virtual Banking press enter to continue");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("To log in please enter your first name");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Hello " + firstName + " please enter your last name to access your accounts.");
+            string lastName = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine(firstName + " " + lastName + " Access granted");
+            Console.WriteLine();
+
+        }
+
         public virtual void PrintBalance()
         {
             Console.WriteLine("Your current balance is " + balance);

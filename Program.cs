@@ -10,78 +10,93 @@ namespace Virtual_Banking
     {
         static void Main(string[] args)
         {
+            Account mainAccount = new Account();
             Checking asterickFree = new Checking();
             Savings premierSavings = new Savings();
             Reserve overDraft = new Reserve();
 
+            mainAccount.Intro();
+
+           
+
+            //While loop to run program
+            int i = 1;
+            while(i==1)
+            {
+
+            
+            
             Console.WriteLine("Enter an account you would like to access /Checking/Savings/Reserve/ ");
             string userInput = Console.ReadLine();
             userInput.ToLower();
-            if (userInput == "checking")
+            if (userInput.ToLower() == "checking")
             {
                 asterickFree.DisplayAccountDetails();
-                Console.WriteLine("Enter withdralw to WITHDRALW enter deposit to DEPOSIT");
+                Console.WriteLine();
+                Console.WriteLine("Enter withdrawl to WITHDRAWL enter deposit to DEPOSIT enter exit to EXIT");
                 string transaction = Console.ReadLine();
                 transaction.ToLower();
-                if (transaction == "deposit")
+                if (transaction.ToLower() == "deposit")
                 {
                     asterickFree.Credit(.00f);
                     asterickFree.DisplayAccountDetails();
                 }
-                else if (transaction == "withdrawl")
+                else if (transaction.ToLower() == "withdrawl")
                 {
                     asterickFree.Debit(.00f);
                     asterickFree.DisplayAccountDetails();
                 }
-                else if (transaction == "exit")
+                else if (transaction.ToLower() == "exit")
                 {
-                    Main(args);
+                        Environment.Exit(0);
 
                 }
 
 
             }
-            else if (userInput == "savings")
+            else if (userInput.ToLower() == "savings")
             {
                 premierSavings.DisplayAccountDetails();
-                Console.WriteLine("Enter withdralw to WITHDRALW enter deposit to DEPOSIT");
+                Console.WriteLine();
+                Console.WriteLine("Enter withdrawl to WITHDRAWL enter deposit to DEPOSIT enter exit to EXIT");
                 string transaction = Console.ReadLine();
                 transaction.ToLower();
-                if (transaction == "deposit")
+                if (transaction.ToLower() == "deposit")
                 {
                     premierSavings.Credit(.00f);
                     premierSavings.DisplayAccountDetails();
                 }
-                else if (transaction == "withdrawl")
+                else if (transaction.ToLower() == "withdrawl")
                 {
                     premierSavings.Debit(.00f);
                     premierSavings.DisplayAccountDetails();
                 }
-                else if (transaction == "exit")
+                else if (transaction.ToLower() == "exit")
                 {
-                    Main(args);
+                    Environment.Exit(0);
 
                 }
             }
-            else if (userInput == "reserve")
+            else if (userInput.ToLower() == "reserve")
             {
                 overDraft.DisplayAccountDetails();
-                Console.WriteLine("Enter withdralw to WITHDRALW enter deposit to DEPOSIT");
+                Console.WriteLine();
+                Console.WriteLine("Enter withdrawl to WITHDRAWL enter deposit to DEPOSIT enter exit to EXIT");
                 string transaction = Console.ReadLine();
                 transaction.ToLower();
-                if (transaction == "deposit")
+                if (transaction.ToLower() == "deposit")
                 {
                     overDraft.Credit(.00f);
                     overDraft.DisplayAccountDetails();
                 }
-                else if (transaction == "withdrawl")
+                else if (transaction.ToLower() == "withdrawl")
                 {
                     overDraft.Debit(.00f);
                     overDraft.DisplayAccountDetails();
                 }
-                else if (transaction == "exit")
+                else if (transaction.ToLower() == "exit")
                 {
-                    Main(args);
+                        Environment.Exit(0);
 
                 }
             }
@@ -91,7 +106,7 @@ namespace Virtual_Banking
             }
 
 
-
+            }//End of while loop
 
 
 

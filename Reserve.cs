@@ -23,7 +23,8 @@ namespace Virtual_Banking
 
         public override float Credit(float creditAmmount)
         {
-
+            Console.WriteLine("Enter how much you would like to deposit");
+            creditAmmount = float.Parse(Console.ReadLine());
             this.balance += creditAmmount;
             return creditAmmount;
 
@@ -31,6 +32,8 @@ namespace Virtual_Banking
 
         public override float Debit(float debitAmmount)
         {
+            Console.WriteLine("Enter an ammount to withdrawl.");
+            debitAmmount = float.Parse(Console.ReadLine());
             this.balance -= debitAmmount;
             return balance;
         }

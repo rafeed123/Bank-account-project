@@ -30,7 +30,7 @@ namespace Virtual_Banking
 
         public override float Debit(float debitAmmount)
         {
-            Console.WriteLine("Enter ann ammount to withdrawl.");
+            Console.WriteLine("Enter an ammount to withdrawl.");
             debitAmmount = float.Parse(Console.ReadLine());
             this.balance -= debitAmmount;
             return balance;
